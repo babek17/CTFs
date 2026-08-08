@@ -59,7 +59,8 @@ Now, we know that we want to fetch data about post with `id=3`, therefore, we ne
               "description": null,
 ...
 ```
-As you can see, we found a query that lets us fetch post by their id. Now, all we need to do is use the following query to fetch data of post with id=3:```js
+As you can see, we found a query that lets us fetch post by their id. Now, all we need to do is use the following query to fetch data of post with id=3:
+```js
 {"query":"\nquery getBlogSummaries {\n    getBlogPost(id: 3) {\n        image\n        title\n        summary\n        id\n    postPassword\n}\n}","operationName":"getBlogSummaries"}
 ```
 This is the response we got:
